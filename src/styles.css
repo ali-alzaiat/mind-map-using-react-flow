@@ -10,3 +10,52 @@ body,
   height: 100%;
   margin: 0;
 }
+
+ .mindmap-container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  }
+
+  .node {
+    width: 180px;
+    height: 64px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    user-select: none;
+    box-shadow: 0 8px 20px -8px rgba(2, 8, 23, 0.25);
+    border: 2px solid #d1d5db;
+    background: #ffffff;
+    color: #111827;
+    position: relative;
+  }
+  .node.root {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: #fff;
+    border-color: #1d4ed8;
+  }
+
+  .toggle-btn {
+    width: 26px;
+    height: 26px;
+    border-radius: 999px;
+    border: 1.5px solid #cbd5e1;
+    background: #f8fafc;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  .toggle-btn:hover {
+    transform: scale(1.06);
+    box-shadow: 0 6px 14px -6px rgba(2, 8, 23, 0.25);
+  }
+  .toggle-btn:active { transform: scale(.95); }
